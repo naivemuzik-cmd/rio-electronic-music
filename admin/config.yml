@@ -1,0 +1,40 @@
+backend:
+  name: git-gateway
+  branch: main
+
+logo_url: "https://rioelectronicmusic1.netlify.app/img/logo-rio.png"
+
+publish_mode: simple
+
+media_folder: "img"
+public_folder: "img"
+
+collections:
+  - name: "eventos"
+    label: "Eventos"
+    files:
+      - name: "lista-eventos"
+        label: "Próximas Fechas"
+        file: "eventos/eventos.json"
+        fields:
+          - label: "Eventos"
+            name: "eventos"
+            widget: "list"
+            hint: "Los cambios no se guardan hasta que apretás 'Publish changes' arriba a la derecha. Si borraste un evento por error, recargá la página sin guardar y vuelve a aparecer."
+            summary: "{{fields.fecha}} — {{fields.headliner}} ({{fields.pais}})"
+            fields:
+              - { label: "País", name: "pais", widget: "select", options: [
+                  { label: "Argentina", value: "AR" },
+                  { label: "Chile", value: "CL" },
+                  { label: "España", value: "ES" },
+                  { label: "Perú", value: "PE" }
+                ] }
+              - { label: "Fecha (ej: 14 JUN)", name: "fecha", widget: "string" }
+              - { label: "Fecha exacta (opcional, con año)", name: "fechaExacta", widget: "datetime", required: false, date_format: "DD/MM/YYYY", time_format: false, format: "YYYY-MM-DD", picker_utc: true, hint: "Si la completás, la web muestra el día de la semana, ofrece agendar la fecha y la pasa sola a 'Ya pasaron por Río' al día siguiente." }
+              - { label: "Mes (ej: JUN)", name: "mes", widget: "string" }
+              - { label: "Provincia/Localidad", name: "localidad", widget: "string", required: false, hint: "Ej: Palermo, CABA / Viña del Mar / Madrid" }
+              - { label: "Subtítulo (ej: PREFERIADO)", name: "subtitulo", widget: "string", required: false }
+              - { label: "Headliner", name: "headliner", widget: "string" }
+              - { label: "Artistas (lista)", name: "artistas", widget: "list" }
+              - { label: "Flyer del evento", name: "imagen", widget: "image", media_folder: "/img", public_folder: "img" }
+              - { label: "Link de entradas", name: "linkEntradas", widget: "string" }

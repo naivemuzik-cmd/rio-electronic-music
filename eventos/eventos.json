@@ -1,0 +1,129 @@
+{
+  "eventos": [
+    {
+      "localidad": "Buenos Aires - Punta Carrasco",
+      "imagen": "img/8-jul-moritz.png",
+      "linkEntradas": "https://wearebombo.app.link/675wpu9Uh4b",
+      "artistas": [
+        "MORITZ HOFBAUER"
+      ],
+      "subtitulo": "Pre Feriado ",
+      "mes": "JUL",
+      "pais": "AR",
+      "fecha": "8 JUL ",
+      "headliner": "MORITZ HOFBAUER"
+    },
+    {
+      "pais": "AR",
+      "fecha": "24 JUL",
+      "mes": "JUL",
+      "localidad": "Cordoba",
+      "headliner": "MUTER",
+      "artistas": [
+        "MUTER"
+      ],
+      "imagen": "img/24-jul-muter.png",
+      "linkEntradas": "https://wearebombo.app.link/HxfJE8bVh4b"
+    },
+    {
+      "pais": "CL",
+      "fecha": "25 JUL",
+      "localidad": "Viña del Mar",
+      "mes": "JUL",
+      "headliner": "Viviana Casanova",
+      "artistas": [
+        "Viviana Casanova",
+        "Silvestre KG (Open Call)"
+      ],
+      "imagen": "img/25-jul-viviana.png",
+      "linkEntradas": "https://www.passline.com/eventos/rio-electronic-presenta-viviana-casanova-silvestre-kg-en-vina-del-mar"
+    },
+    {
+      "localidad": "Bariloche",
+      "imagen": "img/30-jul-nacho-bolognani.png",
+      "linkEntradas": "https://wearebombo.app.link/oKEho1fVh4b",
+      "artistas": [
+        "Nacho Bolognani",
+        "Bonjour Berlin"
+      ],
+      "subtitulo": "After Ski",
+      "mes": "JUL",
+      "pais": "AR",
+      "fecha": "30 JUL",
+      "headliner": "Nacho Bolognani"
+    },
+    {
+      "localidad": "Punta Carrasco",
+      "imagen": "img/7-ago-max-styler.png",
+      "linkEntradas": "https://wearebombo.app.link/R28piiiVh4b",
+      "artistas": [
+        "Max Styler",
+        "Tobias Gerard",
+        "Cromind"
+      ],
+      "subtitulo": "",
+      "mes": "AGO",
+      "pais": "AR",
+      "fecha": "7 AGO",
+      "headliner": "Max Styler"
+    },
+    {
+      "pais": "AR",
+      "localidad": "Pergamino",
+      "fecha": "8 AGO",
+      "mes": "AGO",
+      "headliner": "Nicolas Taboada",
+      "artistas": [
+        "Nicolas Taboada",
+        "Andres Koller",
+        "Eze Fernandez",
+        "Eros"
+      ],
+      "imagen": "img/8-ago-nicolas-taboada.png",
+      "linkEntradas": "https://venti.com.ar/evento/nicolas-taboada-andres-koller-eze-fernandez-eros-x-rio-electronic-music-y-new-vision"
+    },
+    {
+      "pais": "PE",
+      "fecha": "15 AGO",
+      "mes": "AGO",
+      "localidad": "Paradiso Lima",
+      "headliner": "Rafa Barrios",
+      "artistas": [
+        "Rafa Barrios",
+        "Harvy Valencia",
+        "JB Martinz",
+        "Anny Rodriguez"
+      ],
+      "imagen": "img/15-ago-rafa-barrios.png",
+      "linkEntradas": "https://www.vastiontickets.com/evento/rio-pres-rafa-barrios-harvy-valencia"
+    },
+    {
+      "pais": "CL",
+      "fecha": "13 SEPT",
+      "mes": "SEPT",
+      "localidad": "",
+      "headliner": "Ayybo",
+      "artistas": [
+        "Ayybo",
+        "Victor Lou & MoreTBA"
+      ],
+      "imagen": "img/captura-de-pantalla-2026-06-26-a-la-s-15.18.03.png",
+      "linkEntradas": "https://app.byearly.com/eventsRefresh/fqo9loHEnLrbbYqh6SE6"
+    },
+    {
+      "pais": "AR",
+      "fecha": "13 SEPT",
+      "mes": "SEPT",
+      "localidad": "Mendoza",
+      "headliner": "MAX STYLER",
+      "artistas": [
+        "MAX STYLER",
+        "Rama Menendez & Synastry",
+        "RMZD& Chackbeat",
+        "Katiwex"
+      ],
+      "imagen": "img/13-sept-max-styler.png",
+      "linkEntradas": "https://www.passline.com/eventos/max-styler-elevated-2do-aniversario-rio-electronic-music-sunset-event/movida-electronica-mendoza-93428?srsltid=AfmBOooBgMxDLvSNpigMSWXe8I7SmjLzvECcUWwvhSWatrmvFAADXXnQ"
+    }
+  ]
+}

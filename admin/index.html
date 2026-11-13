@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Río Electronic Music — Panel de Administración</title>
+  <style>
+    html, body {
+      margin: 0;
+      min-height: 100vh;
+      background-color: #080907;
+      background-image:
+        linear-gradient(rgba(8,9,7,0.78), rgba(8,9,7,0.88)),
+        url('../img/hero-bg.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: 'Inter', Arial, sans-serif;
+    }
+
+    /* Evita que iOS haga zoom automático al tocar un campo de texto */
+    input, textarea, select {
+      font-size: 16px !important;
+    }
+  </style>
+</head>
+<body>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+
+    // Bloquea el gesto de "deslizar para refrescar" en mobile,
+    // para que no se pierda lo que se está escribiendo por error.
+    (function () {
+      let startY = 0;
+      document.addEventListener('touchstart', function (e) {
+        startY = e.touches[0].clientY;
+      }, { passive: true });
+
+      document.addEventListener('touchmove', function (e) {
+        const y = e.touches[0].clientY;
+        const pullingDownAtTop = window.scrollY === 0 && y > startY;
+        if (pullingDownAtTop) {
+          e.preventDefault();
+        }
+      }, { passive: false });
+    })();
+  </script>
+</body>
+</html>
